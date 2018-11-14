@@ -5,7 +5,7 @@
 
 void setup() {
   // put your setup code here, to run once:
-
+pinMode(cust_beacon_front_north, INPUT);
 }
 
 void loop() {
