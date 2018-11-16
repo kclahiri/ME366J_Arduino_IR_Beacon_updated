@@ -33,23 +33,23 @@ void loop() {
   // put your main code here, to run repeatedly:
   
   int beacon_f_status = digitalRead(beacon_front_north);
-  /*Serial.print("beacon_f_status is ");
+  Serial.print("beacon_f_status is ");
   Serial.println(beacon_f_status);
-  delay(100);*/
+  delay(100);
   int beacon_r_status = digitalRead(beacon_right_east);
-  /*Serial.print("beacon_r_status is ");
+  Serial.print("beacon_r_status is ");
   Serial.println(beacon_r_status);
-  delay(100);*/
+  delay(100);
   int beacon_b_status = digitalRead(beacon_back_south);
-  /*Serial.print("beacon_b_status is ");
+  Serial.print("beacon_b_status is ");
   Serial.println(beacon_b_status);
-  delay(100);*/
+  delay(100);
   int beacon_l_status = digitalRead(beacon_left_west);
-  /*Serial.print("beacon_l_status is ");
+  Serial.print("beacon_l_status is ");
   Serial.println(beacon_l_status);
-  delay(100);*/
+  delay(100);
   
-  int beacon_status[4] = {beacon_f_status, beacon_r_status, beacon_b_status, beacon_l_status};
+  /*int beacon_status[4] = {beacon_f_status, beacon_r_status, beacon_b_status, beacon_l_status};
 
   int case_1[4] = {0, 1, 1, 1}; //N
   int case_2[4] = {0, 0, 1, 1}; //NE
@@ -60,7 +60,7 @@ void loop() {
   int case_7[4] = {1, 1, 1, 0}; //W
   int case_8[4] = {0, 1, 1, 0}; //NW
 
-  while (memcmp(beacon_status,case_1, sizeof(beacon_status)) == 1){
+  /*while (memcmp(beacon_status,case_1, sizeof(beacon_status)) == 1){
     digitalWrite(motor1_fwd, HIGH);
     digitalWrite(motor2_fwd, HIGH);
     Serial.println("Detected North");
@@ -108,6 +108,6 @@ void loop() {
     Serial.println("Detected Northwest");
   }
 
-  delay(100);
+  delay(100);*/
 }
   
